@@ -15,7 +15,7 @@ export const Tabs = ({ tabs, activeTabId, onTabSelected }) => {
                 href={`#${tab.id}`}
                 data-cy="TabLink"
                 onClick={event => {
-                  event.preventDefault(); // Уникаємо переходу за посиланням
+                  event.preventDefault();
                   if (tab.id !== activeTab.id) {
                     onTabSelected(tab.id);
                   }
