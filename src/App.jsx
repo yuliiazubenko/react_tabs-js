@@ -15,10 +15,8 @@ export const App = () => {
   const activeTab = tabs.find(tab => tab.id === activeTabId);
 
   return (
-    // Додано повернення JSX
     <div className="section">
       <h1 className="title">Selected tab is {activeTab?.title}</h1>{' '}
-      {/* Правильний JSX */}
       <Tabs
         tabs={tabs}
         activeTabId={activeTabId}
